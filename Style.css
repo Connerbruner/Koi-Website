@@ -1,0 +1,19 @@
+
+body {
+  background-image: url('koi.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: FlipH;
+      -ms-filter: "FlipH";
+}
+H1 {
+    color: white;
+}
+H2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
