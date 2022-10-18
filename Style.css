@@ -7,13 +7,8 @@ body {
   filter: FlipH;
       -ms-filter: "FlipH";
 }
-H1 {
+H1,H2,p {
     color: white;
 }
-H2 {
-    color: white;
-}
-p {
-    color: white;
-}
+
 
