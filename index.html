@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Koi Pond</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Koi Pond Menu</title>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
 </head>
-
 <body>
-<H1>Welcome to the Koi Pond</H1>
-<br><br><br>
-<H2>Here we serve up high class food in front of a pond of lovely koi fish</H2>
-<br>
-<a href="Menu.html"><button>See Menu</button></a>
-<a href="Photos.html"><button>See Photos</button></a>
-<a href="Review.html"><button>See Reviews</button></a>
-<a href="Reserve.html"><button>Reserve a Seat</button></a>
-
+<a href="index.html"><button>Home</button></a>
+<h1>Menu Items</h1>
+<p id="items"></p>
 <script src="script.js"></script>
+<script>edit("items",getMenuFormat())</script>
+<form name="myForm">
+<input type="text" name="fname">
+<input type="submit">
+</form>
 </body>
 </html>
