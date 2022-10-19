@@ -1,11 +1,10 @@
 const menuItems = ["Ramen,5.20", "Tea,2.00", "Coffee,3.50"];
 var order = [];
-function add(item) {
-    order.push(item);
-    edit("items",getMenuFormat()+"Order Price: "+orderCost()+"<br>CurrentItems: "+orderList());
+function add(index) {
+    order.push(menuItems[index]);
 }
 function getCost(string) {
-    return string.split(',')[1];
+    return parseFloat(string.split(',')[1]);
 }
 function getName(string) {
     return string.split(',')[0];
@@ -25,15 +24,15 @@ function edit(id,string) {
 }
 function orderCost() {
     var cost = 0;
-    array1.forEach(element => cost += getCost(element));
+    order.forEach(element => cost += getCost(element));
     return cost;
 }
 function orderList() {
     var name = "";
-    array1.forEach(element => name += getName(element)+", ");
+    order.forEach(element => name += getName(element)+", ");
     return name;
 }
-function addUpdate(item) {
-    add(item);
-    edit(getMenuFormat()+"Order Price: "+orderCost()+"<br>CurrentItems: "+orderList());
+function addUpdate(id) {
+    add(document.getElementById(id).value);        
+    edit("order","Order Price: $"+orderCost()+"<br>CurrentItems: "+orderList());
 }

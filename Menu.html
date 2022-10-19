@@ -4,10 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Koi Pond Menu</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <a href="index.html"><button>Home</button></a>
 <h1>Menu Items</h1>
+<p id="items"></p>
+    <p id="order"></p>
+<script src="script.js"></script>
+<script>edit("items",getMenuFormat())</script>
+    
+
+<input type="text" id="text"></input>
+<button type="submit" onclick="addUpdate('text');">Add</button>
+<button>Checkout</button>
+</form>
 </body>
 </html>

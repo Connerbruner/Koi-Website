@@ -9,6 +9,10 @@ body {
 }
 H1,H2,p {
     color: white;
+    font-weight: 900;
+}
+p {
+    font-size: 1.2em;
 }
 
 
